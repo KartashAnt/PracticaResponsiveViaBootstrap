@@ -1,0 +1,69 @@
+@media only screen and (max-width:400px) {
+    /*Cambio el posicionamiento de los elementos en mi cuerpo y el color de fondo*/
+    body{
+        background: linear-gradient(to top left, #e6da00, #f1ea53 50%, #fff98f);
+        display: flex;
+        flex-direction: column;
+    }
+    /*Estillode la cabezera*/
+    header{
+        display: block;
+        height: fit-content;
+    }
+    /*El titulo de la página no aparece*/
+    header h1{
+        display: none;
+    }
+    /*El imagen pasa por ocupar un tamaño normal*/
+    header img{
+        max-width: 100%;
+        object-fit: contain;
+    }
+    /*Nav pasa de ser un flex*/
+    nav{
+        position: unset;
+        flex-direction: column;
+    }
+    /*Comportamiento de scrollbar de los botones en el caso de overflow de los botones en telefonos pequeños*/
+    nav > *{
+        max-width: 100%;
+        height: 10vh;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+    nav > *::-webkit-scrollbar{
+        display: none;
+    }
+    /*Cambio el color alos botones de movimiento*/
+    .buttons-movement{
+        background: #00000099;
+    }
+    /*Desaparece el boton de la busqueda*/
+    .search__button{
+        display: none;
+    }
+    /*Alargo la barra de la busqueda*/
+    .search__input{
+        font-size: large;
+        height: 5vh;
+        width: 98%;
+        margin: 1%;
+    }
+    /*Corporativo deja de aparecer*/
+    .corporative{
+        display: none;
+    }
+    /*Los productos se ordenan en una fila*/
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Margen entre los productos*/
+    .product{
+        margin: 1vh;
+    }
+    /*Desaparece la capa de marketing*/
+    .marketing{
+        display: none;
+    }
+}

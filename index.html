@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Las metas basicos-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi página de HTML Responsiva"/>
+    <meta name="keywords" content="responsive, ponme 10 porfa, ese vez todo sigue tu tarea"/>
+    <meta name="author" content="Anton Kartashov" />
+    <meta name="copyright" content="Ausente" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo e icono de mi página -->
+    <link rel="icon" href="images/logo.png">
+    <title>Pagina Responsiva</title>
+    <!-- Hojas de estillo -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/PCPositioning.css">
+    <link rel="stylesheet" href="style/tabletPositioning.css">
+    <link rel="stylesheet" href="style/mobilePositioning.css">
+    <!-- Script que anula la recarga de formulario -->
+    <script src="scripts/formScript.js"></script>
+    <!-- El paquete de fontawesome con los iconos -->
+    <script src="https://kit.fontawesome.com/60b2ed2003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Cabezero de la página que contiene el logo y nombre de mi página -->
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Buy buy buy</h1>
+    </header>
+    <!-- Barra de navegación primaria -->
+    <nav>
+        <!-- Buttones de navegación entre varias subpáginas -->
+        <section class="buttons-movement">
+            <a href="#"><button>Home</button></a>
+            <a href="#"><button>About</button></a>
+            <a href="#"><button>Contact Us</button></a>
+        </section>
+        <!-- Buttones de flujo de personas -->
+        <section class="buttons-register">
+            <a href="#"><button>Log in</button></a>
+            <a href="#"><button>Register</button></a>
+        </section>
+    </nav>
+    <!-- Barra lateral de navegación secundaria -->
+    <aside>
+        <!-- Barra de busqueda -->
+        <form class="search" onsubmit="return submit()">
+            <input class="search__input" type="text">
+            <button class="search__button" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- Bottones de categoriás -->
+        <section class="buttons-context">
+            <a href="#"><button>Weapon</button></a>
+            <a href="#"><button>Food</button></a>
+            <a href="#"><button>Technics</button></a>
+            <a href="#"><button>E-products</button></a>
+            <a href="#"><button>Clothes</button></a>
+        </section>
+        <!-- Información corporativa -->
+        <section class="corporative">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio exercitationem voluptatibus voluptate, est facilis eligendi officiis totam maiores sapiente ut autem magnam ducimus ratione ad provident recusandae eius. Obcaecati, quis lo</span>
+            <br>
+            <span class="corporative__name">kartashov INC.</span>
+        </section>
+    </aside>
+    <!-- Contenido principal de la página(Los productos) -->
+    <article>
+        <!-- Cada uno de los productos contiene titulo iumagen y descripción breve -->
+        <section class="product">
+            <span class="product__title">CEBULKA</span>
+            <img src="images/cebulka.jpg" alt="cebulka">
+            <p class="product__description">Toxic weapon of mass destruction</p>
+        </section>
+        <section class="product">
+            <span class="product__title">Hoodie</span>
+            <img src="images/hoodie.jpg" alt="hoodie">      
+            <p class="product__description">Dude not included</p>
+        </section>
+        <section class="product">
+            <span class="product__title">ANGRY TOASTER</span>
+            <img src="images/toaster.jpg" alt="toaster">
+            <p class="product__description">He will jump in yours bathtub on the first oportunity</p>
+        </section>
+        <section class="product">
+            <span class="product__title">Scythe</span>
+            <img src="images/scythe.jpg" alt="scythe">
+            <p class="product__description">Original Grim Reaper merch collection 2022. New fresh items.</p>
+        </section>
+    </article>
+    <!-- Sección de marketing -->
+    <section class="marketing">
+        <!-- Cada anuncio contiene imagen y texto de anuncio -->
+        <a class="advert-item" href="#" target="_blank">
+            <img src="images/place-your-advert-here.png" alt="advert1">
+            <p>Perfect placement for your advert</p>
+        </a>
+        <a class="advert-item" href="#" target="_blank">
+            <img src="images/place-your-advert-here.png" alt="advert2">
+            <p>Perfect placement for your advert</p>
+        </a>
+    </section>
+    <!-- Pie de la página -->
+    <footer>
+        <p>No copyright on this page</p>
+    </footer>
+</body>
+</html>

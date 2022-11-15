@@ -1,0 +1,165 @@
+/*Importo el fuente */
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+/*Anulo margenes de mi body*/
+body{
+    margin: 0;
+}
+/*Anulo estillo de los enlaces para que no me perjudica*/
+a{
+    color:#000000;
+    text-decoration: none;
+}
+a:visited{
+    color:#000000 ;
+}
+/*Configuro estillo y cambios en todos los botones mios*/
+button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #ffffff;
+}
+button:hover{
+    background: #00000044;
+}
+button:active{
+    background: #00000099;
+}
+/*Posiciono los contenidos de mi cabezera en los lados opuestos y apluico fondo semi-opaque*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #0000007F;
+}
+/*Estillo de texto de mi cabezera*/
+header h1{
+    margin-right: 10px;
+    align-self: center;
+    font-family: 'Mr Dafoe', cursive;
+}
+/*Posiciono los botones de navegación en un cabezero sticky de forma flexible separado en dos partes*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #000000bf;
+    position: sticky;
+    top: 0px;
+}
+/*Cada seccion de nav es un flex*/
+nav > section{
+    display: flex;
+}
+/*Tamaño de enlace de mi barra de navegación*/
+nav>section>a{
+    flex: 1;
+    min-width: 100px;
+}
+/*Configuro el estilo de mi barra de navigacion adicional*/
+aside{
+    display: inline-flex;
+    flex-direction: column;
+    background: #0000007F;
+}
+/*Estillo de mi barra de busqueda*/
+.search{
+    margin-top: 5px;
+    display: flex;
+}
+/*Estillo para la entrada textual de mi barra debusqueda mi barra de busqueda*/
+.search__input{
+    background: #00000088;
+    border: none;
+    color: #ffffff;
+    width: 10vw;
+}
+.search__input:focus{
+    background: #000000aa;
+    outline: none;
+}
+/*Estillo de los botones de las categorias*/
+.buttons-context{
+    display: flex;
+    flex-direction: column;
+}
+.buttons-context a{
+    flex-basis: 50px;
+}
+/*Estillo de información corporativa*/
+.corporative{
+    font-size: xx-small;
+    margin-top: auto;
+}
+.corporative__name{
+    font-weight: bolder;
+}
+/*Ordeno los productos a traves de un grid*/
+article{
+    display: inline-grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    background: #ffffff33;
+}
+/*Estillode la tarjeta de producto*/
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min-content;
+    background: #ffff0088;
+    border-radius: 10%;
+    height: 80%;
+    width: 50%;
+    align-items: center;
+    transition: .5s;
+    font-size: 2.5vh;
+}
+/*Estillo del imagen de producto*/
+.product img{
+    height: 25vmin;
+    width: 8vmax;
+    object-fit: fill;
+}
+.product:hover{
+    background: #ff000088;
+    border-radius: 15%;
+}
+/*Fuente del titulo de producto*/
+.product__title{
+    font-family: 'Mr Dafoe', cursive;
+}
+/*Alineación de la descripción de producto*/
+.product__description{
+    text-align: center;
+}
+/*Estillode capa de marketing*/
+.marketing{
+    background: #ffffffab;
+    display: inline-flex;
+    justify-content: space-around;
+}
+/*El estillo de una tarjeta de anuncio*/
+.advert-item{
+    padding-top: 10px;
+    color:#000000;
+    background: #ffffff44;
+    text-align: center;
+}
+.advert-item:hover{
+    background: #ffffff77;
+}
+.advert-item img{
+    height: 20vh;
+}
+/*Estillo de la pie de la página*/
+footer{
+    background-color: #000000cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: small;
+}
