@@ -6,11 +6,13 @@
     <meta name="description" content="Mi página de HTML Responsiva"/>
     <meta name="keywords" content="responsive, ponme 10 porfa, ese vez todo sigue tu tarea"/>
     <meta name="author" content="Anton Kartashov" />
-    <meta name="copyright" content="Ausente" />d
+    <meta name="copyright" content="Ausente" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo e icono de mi página -->
     <link rel="icon" href="images/logo.png">
     <title>Pagina Responsiva Bootstrap</title>
+    <!-- Estillos de mi página -->
+    <link rel="stylesheet" href="style/styling.css">
     <!-- Script que anula la recarga de formulario -->
     <script src="scripts/formScript.js"></script>
     <!-- El paquete de fontawesome con los iconos -->
@@ -22,10 +24,12 @@
 </head>
 <body>
     <!-- Cabezero de la página que contiene el logo y nombre de mi página -->
-    <header>
-        <img src="images/logo.png" alt="logo">
-        <h1>Buy buy buy</h1>
-    </header>
+    <div class="header container-fluid">
+        <div class="row justify-content-between">
+            <img src="images/logo.png" alt="logo" class="col img-fluids" id="logo">
+            <h1 class="col">Buy buy buy</h1>
+        </div>
+    </div>
     <!-- Barra de navegación primaria -->
     <nav>
         <!-- Buttones de navegación entre varias subpáginas -->
