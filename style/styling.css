@@ -1,3 +1,21 @@
+/*Importo el fuente */
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+/*El tamaño de logo*/
 #logo{
     max-width: 200px;
+}
+/*Colores de fondo*/
+body{
+    background: linear-gradient(to top left, #00e6da, #53f1ea 50%, #8ffff9);
+}
+.header{
+    background: #0000007F;
+}
+/*Estillo de texto de la cabezera*/
+.header h1{
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 15vmin;
+    line-height: 176px;
+    text-align: right;
+    margin: 0;
 }
