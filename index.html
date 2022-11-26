@@ -65,28 +65,40 @@
         </div>
     </aside>
     <!-- Contenido principal de la página(Los productos) -->
-    <article>
+    <article class="container-fluid">
         <!-- Cada uno de los productos contiene titulo iumagen y descripción breve -->
-        <section class="product">
-            <span class="product__title">CEBULKA</span>
-            <img src="images/cebulka.jpg" alt="cebulka">
-            <p class="product__description">Toxic weapon of mass destruction</p>
-        </section>
-        <section class="product">
-            <span class="product__title">Hoodie</span>
-            <img src="images/hoodie.jpg" alt="hoodie">      
-            <p class="product__description">Dude not included</p>
-        </section>
-        <section class="product">
-            <span class="product__title">ANGRY TOASTER</span>
-            <img src="images/toaster.jpg" alt="toaster">
-            <p class="product__description">He will jump in yours bathtub on the first oportunity</p>
-        </section>
-        <section class="product">
-            <span class="product__title">Scythe</span>
-            <img src="images/scythe.jpg" alt="scythe">
-            <p class="product__description">Original Grim Reaper merch collection 2022. New fresh items.</p>
-        </section>
+        <div class="row">
+            <section class="product col card">
+                <img src="images/cebulka.jpg" alt="cebulka" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="product__title card-title">CEBULKA</h4>
+                    <p class="product__description card-text">Toxic weapon of mass destruction</p>
+                </div>
+            </section>
+            <section class="product col card">
+                <img src="images/hoodie.jpg" alt="hoodie" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="product__title card-title">Hoodie</h4>      
+                    <p class="product__description card-text">Dude not included</p>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="product col card">
+                <img src="images/toaster.jpg" alt="toaster" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="product__title card-title">ANGRY TOASTER</h4>
+                    <p class="product__description card-text">He will jump in yours bathtub on the first oportunity</p>
+                </div>
+            </section>
+            <section class="product col card">
+                <img src="images/scythe.jpg" alt="scythe" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="product__title card-title">Scythe</h4>
+                    <p class="product__description card-text">Original Grim Reaper merch collection 2022. New fresh items.</p>
+                </div>
+            </section>
+        </div>
     </article>
     <!-- Sección de marketing -->
     <section class="marketing">

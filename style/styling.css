@@ -21,3 +21,21 @@ body{
     text-align: right;
     margin: 0;
 }
+.product{
+    margin: 5%;
+    max-height: 60vmin;
+    transition: .5s all;
+}
+.product img{
+    max-height: 40vmin;
+    object-fit: cover;
+}
+article .row:last-child .product:last-child img{
+    object-position: top;
+}
+.product:hover{
+    background: #D2043d;
+}
+.product:active{
+    background: #D24488;
+}
