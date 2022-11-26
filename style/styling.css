@@ -1,5 +1,7 @@
 /*Importo el fuente */
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+/*Imprto el estillo de los botones*/
+@import url("buttonStyle.css");
 /*El tamaño de logo*/
 #logo{
     max-width: 200px;
