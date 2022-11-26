@@ -17,8 +17,6 @@
     <script src="https://kit.fontawesome.com/60b2ed2003.js" crossorigin="anonymous"></script>
     <!-- CSS de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JS de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- Estillos de mi página -->
     <link rel="stylesheet" href="style/styling.css">
 </head>
@@ -42,26 +40,29 @@
             <a href="#" class="btn btn-glass">Register</a>
     </nav>
     <!-- Barra lateral de navegación secundaria -->
-    <aside>
-        <!-- Barra de busqueda -->
-        <form class="search" onsubmit="return submit()">
-            <input class="search__input" type="text">
-            <button class="search__button" type="submit"><i class="fa fa-search"></i></button>
-        </form>
+    <aside class="d-flex">
+        <!-- Barra de busqueda.-->
+        <div class="input-group">
+            <div class="form-outline">
+              <input type="search" id="form1" class="form-control" />
+            </div>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
         <!-- Bottones de categoriás -->
-        <section class="buttons-context">
-            <a href="#"><button>Weapon</button></a>
-            <a href="#"><button>Food</button></a>
-            <a href="#"><button>Technics</button></a>
-            <a href="#"><button>E-products</button></a>
-            <a href="#"><button>Clothes</button></a>
-        </section>
-        <!-- Información corporativa -->
-        <section class="corporative">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio exercitationem voluptatibus voluptate, est facilis eligendi officiis totam maiores sapiente ut autem magnam ducimus ratione ad provident recusandae eius. Obcaecati, quis lo</span>
-            <br>
-            <span class="corporative__name">kartashov INC.</span>
-        </section>
+        <div class="dropdown show">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Categoría
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Weapon</a>
+                <a class="dropdown-item" href="#">Food</a>
+                <a class="dropdown-item" href="#">Technics</a>
+                <a class="dropdown-item" href="#">E-products</a>
+                <a class="dropdown-item" href="#">Clothes</a>
+            </div>
+        </div>
     </aside>
     <!-- Contenido principal de la página(Los productos) -->
     <article>
@@ -103,5 +104,10 @@
     <footer>
         <p>No copyright on this page</p>
     </footer>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <!-- JS de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
 </body>
 </html>
