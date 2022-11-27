@@ -3,6 +3,9 @@
 /*Imprto el estillo de los botones*/
 @import url("buttonStyle.css");
 /*El tamaño de logo*/
+p{
+    font-size: 3vmin;
+}
 #logo{
     max-width: 200px;
 }
@@ -38,4 +41,14 @@ article .row:last-child .product:last-child img{
 }
 .product:active{
     background: #D24488;
+}
+.marketing{
+    width: 100%;
+}
+.advert-item{
+    margin: 0 15vw;
+    text-align: center;
+}
+footer{
+    background: #000000a7;
 }
