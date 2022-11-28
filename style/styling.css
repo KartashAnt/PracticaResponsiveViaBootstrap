@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 /*Imprto el estillo de los botones*/
 @import url("buttonStyle.css");
-/*El tamaño de logo*/
+/*Importo el estillo de PC*/
+@import url("stylePC.css");
+/*Importo el estillo de tablet*/
+@import url("styleTablet.css");
+/*Importo estillo de movil*/
+@import url("styleMobile.css");
+/*El tamaño de fuente en lo0s bloques p*/
 p{
     font-size: 3vmin;
 }
+/*El tamaño de logo*/
 #logo{
     max-width: 200px;
 }
-/*Colores de fondo*/
-body{
-    background: linear-gradient(to top left, #00e6da, #53f1ea 50%, #8ffff9);
-}
+/*Estillo de la cabezera*/
 .header{
     background: #0000007F;
     margin: 0;
@@ -25,17 +29,10 @@ body{
     text-align: right;
     margin: 0;
 }
+/*Estillo de las cartas de los productos*/
 .product{
-    margin: 5%;
     max-height: 60vmin;
     transition: .5s all;
-}
-.product img{
-    max-height: 40vmin;
-    object-fit: cover;
-}
-article .row:last-child .product:last-child img{
-    object-position: top;
 }
 .product:hover{
     background: #D2043d;
@@ -43,90 +40,23 @@ article .row:last-child .product:last-child img{
 .product:active{
     background: #D24488;
 }
+/*Limito el tamaño de los imagenes de la tarjeta para fijar en lo más importante*/
+.product img{
+    max-height: 40vmin;
+    object-fit: cover;
+}
+/*Para que cierto elemento muestro su parte que interesa*/
+article .row:last-child .product:last-child img{
+    object-position: top;
+}
+/*Capa de marketing*/
 .marketing{
     width: 100%;
 }
 .advert-item{
-    margin: 0 15vw;
     text-align: center;
 }
+/*Pie de la página*/
 footer{
     background: #000000a7;
-}
-.categorias-tablet-mobile{
-    display: none;
-}
-@media only screen and (max-width:1080px) {
-    body{
-        background: linear-gradient(to top left, #e600da, #f153ea 50%, #ff8ff9);
-    }
-    .categorias-tablet-mobile{
-        display: inline-block;
-    }
-    .categorias-pc{
-        display: none;
-    }
-    .input-group{
-        flex-direction: column;
-    }
-    .dropdown-menu{
-        width: 100%;
-    }
-    .marketing{
-        font-size: 1vh;
-        min-width: 100%;
-        background: #000000a7;
-        position: fixed;
-        bottom: 0;
-    }
-    .advert-item{
-        margin: 0 17vw;
-        height: 20vh;
-    }
-    .advert-item img{
-        height: 15vh;
-        object-fit: contain;
-    }
-    footer{
-        height: 24vh;
-    }
-}
-@media only screen and (max-width:600px) {
-    body{
-        background: linear-gradient(to top left, #e6da00, #f1ea53 50%, #fff98f);
-    }
-    .header{
-        justify-content: space-around;
-    }
-    .header img{
-        min-width: 80vw;
-    }
-    .header h1{
-        display: none;
-    }
-    .btn-glass{
-        font-size: 7vmin;
-    }
-    .input-group button{
-        display: none;
-    }
-    article .row{
-        flex-direction: column;
-    }
-    .product{
-        margin: 5% 0;;
-    }
-    .product__title{
-        font-size: 7vmin;
-        text-align: center;
-    }
-    .product__description{
-        display: none;
-    }
-    .marketing{
-        display: none;
-    }
-    footer{
-        height: auto;
-    }
 }

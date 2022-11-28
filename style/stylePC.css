@@ -1,0 +1,16 @@
+/*Color de fondo*/
+body{
+    background: linear-gradient(to top left, #00e6da, #53f1ea 50%, #8ffff9);
+}
+/*ocluto el boton de categorias para los movíles*/
+.categorias-tablet-mobile{
+    display: none;
+}
+/*Margen entre los productos*/
+.product{
+    margin: 5%;
+}
+/*Margen entre los anuncios*/
+.advert-item{
+    margin: 0 15vw;
+}

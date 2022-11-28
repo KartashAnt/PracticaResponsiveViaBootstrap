@@ -1,0 +1,51 @@
+@media only screen and (max-width:600px) {
+    /*Color de fondo*/
+    body{
+        background: linear-gradient(to top left, #e6da00, #f1ea53 50%, #fff98f);
+    }
+    /*Centro imagén en la cabezera*/
+    .header{
+        justify-content: space-around;
+    }
+    /*Obligo el imagen a ocupar cierto ancho*/
+    .header img{
+        min-width: 80vw;
+    }
+    /*Oculto texto de la cabezera*/
+    .header h1{
+        display: none;
+    }
+    /*Rebajo el tamaño de fuente de los botones y, consecutivamente, su tamaño*/
+    .btn-glass{
+        font-size: 5vmin;
+    }
+    /*Oculto el boton de la busqueda*/
+    .input-group button{
+        display: none;
+    }
+    /*Posiciono los ariculos en las columnas*/
+    article .row{
+        flex-direction: column;
+    }
+    /*Modifico ligeramente el margen entre los productos para que sea solamente vertical*/
+    .product{
+        margin: 5% 0;
+    }
+    /*Flexibilizo el tamaño de titulo de producto y lo centro*/
+    .product__title{
+        font-size: 7vmin;
+        text-align: center;
+    }
+    /*Oculto descripción de producto*/
+    .product__description{
+        display: none;
+    }
+    /*Oculto la capa de marketing*/
+    .marketing{
+        display: none;
+    }
+    /*Vuelvo el tamaño de pie a su tamaño normas*/
+    footer{
+        height: auto;
+    }
+}

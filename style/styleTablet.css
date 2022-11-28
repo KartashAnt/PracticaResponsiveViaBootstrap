@@ -1,0 +1,44 @@
+@media only screen and (max-width:1080px) {
+    /*Color de fondo*/
+    body{
+        background: linear-gradient(to top left, #e600da, #f153ea 50%, #ff8ff9);
+    }
+    /*Presento la boton de cadegorias moviles*/
+    .categorias-tablet-mobile{
+        display: inline-block;
+    }
+    /*Cambio el posicionamiento de barra y boton de la busqueda*/
+    .input-group{
+        flex-direction: column;
+    }
+    /*Oculto la botod de las categorías para el PC*/
+    .categorias-pc{
+        display: none;
+    }
+    /*Obligo al menu de categorías ocupar el ancho entero*/
+    .dropdown-menu{
+        width: 100%;
+    }
+    /*Pongo la capa de marketing por encima de resto*/
+    .marketing{
+        font-size: 1vh;
+        min-width: 100%;
+        background: #000000a7;
+        position: fixed;
+        bottom: 0;
+    }
+    /*Modifico ligeramente los anuncios que salen*/
+    .advert-item{
+        margin: 0 17vw;
+        height: 20vh;
+    }
+    /*Obligo al imagen de an uncio ocupar cierta parte de su contenedor*/
+    .advert-item img{
+        height: 15vh;
+        object-fit: contain;
+    }
+    /*Footer ocupa sufficiente espacio para ser visible sobre anuncio*/
+    footer{
+        height: 24vh;
+    }
+}
