@@ -15,6 +15,7 @@ body{
 }
 .header{
     background: #0000007F;
+    margin: 0;
 }
 /*Estillo de texto de la cabezera*/
 .header h1{
@@ -65,6 +66,12 @@ footer{
     .categorias-pc{
         display: none;
     }
+    .input-group{
+        flex-direction: column;
+    }
+    .dropdown-menu{
+        width: 100%;
+    }
     .marketing{
         font-size: 1vh;
         min-width: 100%;
@@ -82,5 +89,44 @@ footer{
     }
     footer{
         height: 24vh;
+    }
+}
+@media only screen and (max-width:600px) {
+    body{
+        background: linear-gradient(to top left, #e6da00, #f1ea53 50%, #fff98f);
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .header img{
+        min-width: 80vw;
+    }
+    .header h1{
+        display: none;
+    }
+    .btn-glass{
+        font-size: 7vmin;
+    }
+    .input-group button{
+        display: none;
+    }
+    article .row{
+        flex-direction: column;
+    }
+    .product{
+        margin: 5% 0;;
+    }
+    .product__title{
+        font-size: 7vmin;
+        text-align: center;
+    }
+    .product__description{
+        display: none;
+    }
+    .marketing{
+        display: none;
+    }
+    footer{
+        height: auto;
     }
 }
