@@ -65,4 +65,22 @@ footer{
     .categorias-pc{
         display: none;
     }
+    .marketing{
+        font-size: 1vh;
+        min-width: 100%;
+        background: #000000a7;
+        position: fixed;
+        bottom: 0;
+    }
+    .advert-item{
+        margin: 0 17vw;
+        height: 20vh;
+    }
+    .advert-item img{
+        height: 15vh;
+        object-fit: contain;
+    }
+    footer{
+        height: 24vh;
+    }
 }
