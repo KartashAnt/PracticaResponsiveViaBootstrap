@@ -52,3 +52,17 @@ article .row:last-child .product:last-child img{
 footer{
     background: #000000a7;
 }
+.categorias-tablet-mobile{
+    display: none;
+}
+@media only screen and (max-width:1080px) {
+    body{
+        background: linear-gradient(to top left, #e600da, #f153ea 50%, #ff8ff9);
+    }
+    .categorias-tablet-mobile{
+        display: inline-block;
+    }
+    .categorias-pc{
+        display: none;
+    }
+}
